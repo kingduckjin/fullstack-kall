@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h2>save.html</h2>
+  <form action="/user/save" method="post">
+    이메일: <input type="text" name="userEmail" id="userEmail" onblur="emailDuplicate()"> <br>
+    <span id="email-dup-result"></span>
+    비밀번호: <input type="text" name="userPassword"> <br>
+    이름: <input type="text" name="userName"> <br>
+    나이: <input type="text" name="userAge"> <br>
+    전화번호: <input type="text" name="userMobile"> <br>
+    <input type="submit" value="회원가입">
+  </form>
+</body>
+</html>
